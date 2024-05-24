@@ -1,0 +1,7 @@
+Write html and css code to style a 
+paragraph inside a dic which contains 5 other paragraphs.
+
+The first paragraph must have background color yellow
+and text color red. 
+The other para must have bkg color blue and text color white.
+

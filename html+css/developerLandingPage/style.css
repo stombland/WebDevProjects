@@ -173,6 +173,12 @@ footer{
         font-weight: 400;
         font-size: 32px;
     }
+
+    /* .card{
+        margin-left: 50%;
+        margin-right: 50%;
+    } */
+
     .bottom_section{
         flex-direction: column;
     }

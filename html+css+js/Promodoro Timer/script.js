@@ -1,7 +1,7 @@
 // variables
 
-let workTittle = document.getElementById('work');
-let breakTittle = document.getElementById('break');
+let workTitle = document.getElementById('work');
+let breakTitle = document.getElementById('break');
 
 let workTime = 25;
 let breakTime = 5;
@@ -13,7 +13,7 @@ window.onload = () => {
     document.getElementById('minutes').innerHTML = workTime;
     document.getElementById('seconds').innerHTML = seconds;
 
-    workTittle.classList.add('active');
+    workTitle.classList.add('active');
 }
 
 // start timer
@@ -22,7 +22,7 @@ function start() {
     document.getElementById('start').style.display = "none";
     document.getElementById('reset').style.display = "block";
 
-    // change the time
+    //Change the time
     seconds = 59;
 
     let workMinutes = workTime - 1;
@@ -47,17 +47,17 @@ function start() {
                     workMinutes = breakMinutes;
                     breakCount++
 
-                    // change the painel
-                    workTittle.classList.remove('active');
-                    breakTittle.classList.add('active');
+                    // change the panel
+                    workTitle.classList.remove('active');
+                    breakTitle.classList.add('active');
                 }else {
                     // continue work
                     workMinutes = workTime;
                     breakCount++
 
-                    // change the painel
-                    breakTittle.classList.remove('active');
-                    workTittle.classList.add('active');
+                    // change the panel
+                    breakTitle.classList.remove('active');
+                    workTitle.classList.add('active');
                 }
             }
             seconds = 59;
